@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adrian Kopa's computer science portfolio, projects, and experience.">
+    <title>Adrian Kopa | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#about" class="logo">Adrian Kopa</a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon" aria-label="Toggle navigation" role="button" tabindex="0"></i>
+
+        <a href="https://github.com/ATJK17"
+           class="visit-btn"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit GitHub
+        </a>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="about-container">
+                <img src="headshot.jpeg" alt="Portrait of Adrian Kopa" class="profile-img">
+
+                <div class="about-content">
+                    <div class="info-box">
+                        <h3>Hi, I'm</h3>
+                        <h1>Adrian Kopa</h1>
+                        <span>Aspiring Software Developer</span>
+                        <p>I'm a Computer Science student interested in software development, programming, and building useful projects.</p>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="Adrian_Kopa_Resume.pdf" class="btn" download>Download Resume</a>
+                        <a href="#contact" class="btn">Contact Me</a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://github.com/ATJK17"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/adrian-kopa-663b92332/"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-info">
+                <div class="grid">
+                    <div class="grid-card">
+                        <i class="fa-solid fa-school"></i>
+                        <span>High School</span>
+                        <h3>2020–2024</h3>
+                        <h4>Curro Midrand Sagewood | Midrand, South Africa</h4>
+                        <p>Graduated from Curro Midrand Sagewood High School with a GPA of 3.28.</p>
+                    </div>
+
+                    <div class="grid-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Computer Science Student</span>
+                        <h3>2025–Present</h3>
+                        <h4>Dakota State University | Madison, South Dakota</h4>
+                        <p>Pursuing a degree in Computer Science, with coursework in programming, data structures, algorithms, and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Recent Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="Eye.png" alt="Project preview">
+                    <h3>Project One</h3>
+                    <p>Replace this description with details about a project you have built.</p>
+
+                    <div class="btn-group">
+                        <a href="https://github.com/ATJK17"
+                           class="btn" target="_blank"
+                           rel="noopener noreferrer">View Projects</a>
+                        <a href="https://github.com/ATJK17"
+                           class="btn" target="_blank"
+                           rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Eye.png" alt="Project preview">
+                    <h3>Project Two</h3>
+                    <p>Add another project here, including the technologies you used and what it does.</p>
+
+                    <div class="btn-group">
+                        <a href="https://github.com/ATJK17"
+                           class="btn" target="_blank"
+                           rel="noopener noreferrer">View Projects</a>
+                        <a href="https://github.com/ATJK17"
+                           class="btn" target="_blank"
+                           rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <form class="contact-form" action="https://formspree.io/f/maeqkwzp" method="POST">
+               
+                <input type="text" name="_gotcha" class="bot-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <input type="hidden" name="_subject" value="New message from your portfolio website">
+
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-description">Have a question or want to connect? Send me a message!</p>
+
+                <p class="contact-description"> Prefer email?
+                <a href="mailto:adriankopa30@gmail.com">Email me directly</a>
+                </p>
+
+                <div class="contact-fields">
+                    <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+                    <input type="email" name="email" placeholder="Your email address" aria-label="Your email address" autocomplete="email" required>            
+                    <textarea name="message" placeholder="Write your message..." aria-label="Your message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn contact-submit">
+                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">© <span id="year">2026</span> Adrian Kopa | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
