@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111318">
+    <meta name="description" content="FaceVision AI - Real-time facial landmark detection using MediaPipe.">
+    <title>FaceVision AI | Adrian Kopa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <a href="../index.html#projects" class="back-link">
+            <i aria-hidden="true">←</i> Back to my portfolio
+        </a>
+
+        <header class="page-header">
+            <p class="eyebrow">COMPUTER VISION PROJECT</p>
+            <h1>FaceVision <span>AI</span></h1>
+            <p class="intro">
+                Real-time facial landmark detection powered by MediaPipe.
+                Track facial features directly in your browser.
+            </p>
+        </header>
+
+        <section class="demo-card" aria-label="Live face detection demo">
+            <div class="toolbar">
+                <span id="status" class="status" role="status">
+                    Ready to start
+                </span>
+                <span class="local-label">ON-DEVICE PROCESSING</span>
+            </div>
+
+            <div class="video-stage">
+                <video id="webcam" autoplay muted playsinline></video>
+                <canvas id="overlay"></canvas>
+
+                <div id="placeholder" class="placeholder">
+                    <span class="camera-icon" aria-hidden="true">◎</span>
+                    <h2>See FaceVision in action</h2>
+                    <p>Your facial landmarks will appear here.</p>
+                    <small>Click Start Camera to begin.</small>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="startButton" type="button">
+                    Start Camera
+                </button>
+                <button id="stopButton" class="secondary" type="button" disabled>
+                    Stop Camera
+                </button>
+            </div>
+
+            <div class="metrics">
+                <div class="metric">
+                    <span class="metric-label">FACES</span>
+                    <strong id="faceCount">0</strong>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">FPS</span>
+                    <strong id="fps">—</strong>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">LANDMARKS</span>
+                    <strong id="landmarkCount">—</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <h2>How it works</h2>
+            <p>
+                FaceVision uses MediaPipe Face Landmarker to identify facial
+                landmarks in real time. JavaScript draws the results over the
+                camera preview.
+            </p>
+
+            <div class="legend">
+                <span><i class="dot green"></i> Eyes</span>
+                <span><i class="dot orange"></i> Lips</span>
+                <span><i class="dot purple"></i> Facial landmarks</span>
+            </div>
+
+            <h2>Privacy first</h2>
+            <p>
+                Camera frames are processed locally in your browser and are
+                not uploaded by this demo. The AI library and model are
+                downloaded from external hosting services.
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                Built by Adrian Kopa · Python · OpenCV · JavaScript · MediaPipe
+            </p>
+            <a href="https://github.com/ATJK17"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore my GitHub →
+            </a>
+        </footer>
+    </main>
+</body>
+</html>
